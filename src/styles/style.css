@@ -1,0 +1,7 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-md);
+  letter-spacing: var(--letter-sm);
+  font-size: var(--size--1rem);
+}
