@@ -99,26 +99,38 @@
   /* ========================= */
 
   /* Primary Button */
-  --btn-primary-bg: var(--text-primary); /* Ciemny (222222) */
-  --btn-primary-border: var(--border-primary); /* Szary border */
-  --btn-primary-text: var(--gray-100); /* Biały tekst */
-  --btn-primary-bg-hover: var(--gray-700); /* Średni szary */
+  --btn-primary-bg: var(--text-primary);
+  --btn-primary-border: var(--border-primary);
+  --btn-primary-text: var(--gray-100);
+  --btn-primary-bg-hover: var(--gray-700);
   --btn-primary-border-hover: var(--gray-700);
   --btn-primary-text-hover: var(--gray-100);
 
   /* Secondary Button */
-  --btn-secondary-bg: var(--transparent); /* Przezroczysty */
-  --btn-secondary-border: var(--border-secondary); /* Średni szary */
+  --btn-secondary-bg: var(--transparent);
+  --btn-secondary-border: var(--border-secondary);
   --btn-secondary-text: var(--text-secondary);
-  --btn-secondary-bg-hover: var(--gray-300); /* Jasny szary */
+  --btn-secondary-bg-hover: var(--gray-300);
   --btn-secondary-border-hover: var(--gray-500);
   --btn-secondary-text-hover: var(--text-primary);
 
   /* Tertiary Button */
-  --btn-tertiary-bg: var(--bg-tertiary); /* Beżowy */
+  --btn-tertiary-bg: var(--bg-tertiary);
   --btn-tertiary-border: var(--border-tertiary);
   --btn-tertiary-text: var(--text-primary);
   --btn-tertiary-bg-hover: var(--gray-500);
   --btn-tertiary-border-hover: var(--border-secondary);
   --btn-tertiary-text-hover: var(--text-primary);
+
+  /* ========================= */
+  /* === Z-Indexes === */
+  /* ========================= */
+  --z-index-negative: -1;
+  --z-index-neutral: 0;
+  --z-index-positive-1: 1;
+  --z-index-positive-2: 2;
+  --z-index-navbar: 5;
+  --z-index-modal: 10;
+  --z-index-overlay: 15;
+  --z-index-debug: 999;
 }
