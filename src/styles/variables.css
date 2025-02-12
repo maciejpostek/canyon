@@ -151,8 +151,4 @@
   /* Site Settings */
   --site-margin: clamp(0.75rem, 0.2rem + 3vw, 5rem);
   --site-width: 90rem;
-  --site-max-width: min(var(--site-width), 100vw);
-
-  /* Containers */
-  --container-main: calc(var(--site-max-width) - var(--site-margin) * 2);
-}
+  --
