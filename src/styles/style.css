@@ -1,7 +1,42 @@
+@import url('./variables.css');
+@import url('./header.css');
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: var(--font-weight-regular);
   line-height: var(--line-md);
   letter-spacing: var(--letter-sm);
-  font-size: var(--size--1rem);
+  font-size: var(--font-md-size);
+}
+
+/* ========== Utility Classes ========== */
+.u-container {
+  width: 100%;
+  max-width: var(--container-main);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.u-input-search {
+  font-size: var(--font-sm-size);
+  height: var(--size--2-5rem);
+  border-radius: var(--border-radius-full);
+  border-color: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  line-height: 1em;
+  padding-top: var(--size--0-5rem);
+  padding-bottom: var(--size--0-5rem);
+  padding-right: var(--size--1-25rem);
+  padding-left: var(--size--1-25rem);
+}
+
+/* ========== Global Classes ========== */
+
+.g_link {
+  color: var(--text-primary);
+  font-size: var(--font-sm-size);
+  line-height: 1;
+  text-decoration: none;
 }
