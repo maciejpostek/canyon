@@ -2,15 +2,15 @@
   /* ========================= */
   /* === Responsive Size System === */
   /* ========================= */
-  --size--0rem: clamp(0rem, 0rem + 0vw, 0rem);
-  --size--0-125rem: clamp(0.125rem, 0.1rem + 0.02vw, 0.15rem);
-  --size--0-25rem: clamp(0.25rem, 0.214rem + 0.07vw, 0.3rem);
-  --size--0-375rem: clamp(0.375rem, 0.321rem + 0.11vw, 0.45rem);
-  --size--0-5rem: clamp(0.5rem, 0.428rem + 0.14vw, 0.6rem);
-  --size--0-75rem: clamp(0.75rem, 0.642rem + 0.21vw, 0.9rem);
-  --size--1rem: clamp(1rem, 0.85rem + 0.3vw, 1.2rem);
-  --size--1-25rem: clamp(1.25rem, 1.071rem + 0.36vw, 1.5rem);
-  --size--1-5rem: clamp(1.5rem, 1.285rem + 0.43vw, 1.8rem);
+  --size--0rem: 0rem;
+  --size--0-125rem: 0.125rem;
+  --size--0-25rem: 0.25rem;
+  --size--0-375rem: 0.375rem;
+  --size--0-5rem: 0.5rem;
+  --size--0-75rem: 0.75rem;
+  --size--1rem: 1rem;
+  --size--1-25rem: 1.25rem;
+  --size--1-5rem: 1.5rem;
   --size--2rem: clamp(1.75rem, 1.678rem + 0.36vw, 2rem);
   --size--2-5rem: clamp(2rem, 1.858rem + 0.71vw, 2.5rem);
   --size--3rem: clamp(2.25rem, 2.036rem + 1.07vw, 3rem);
@@ -38,20 +38,21 @@
   /* ========================= */
   /* === Typography === */
   /* ========================= */
-  --font-h1-size: var(--size--4rem);
-  --font-h2-size: var(--size--3-5rem);
-  --font-h3-size: var(--size--3rem);
-  --font-h4-size: var(--size--2-5rem);
-  --font-h5-size: var(--size--2rem);
-  --font-h6-size: var(--size--1-5rem);
-  --font-lg-size: var(--size--1-25rem);
-  --font-md-size: var(--size--1rem);
-  --font-sm-size: var(--size--0-75rem);
+  --font-h1-size: clamp(1.84rem, 1.708rem + 0.66vw, 2.3rem);
+  --font-h2-size: clamp(1.63rem, 1.512rem + 0.59vw, 2.04rem);
+  --font-h3-size: clamp(1.44rem, 1.338rem + 0.51vw, 1.8rem);
+  --font-h4-size: clamp(1.28rem, 1.188rem + 0.46vw, 1.6rem);
+  --font-h5-size: clamp(1.13rem, 1.05rem + 0.4vw, 1.41rem);
+  --font-h6-size: clamp(1rem, 0.928rem + 0.36vw, 1.25rem);
+  --font-lg-size: clamp(1.14rem, 1.106rem + 0.17vw, 1.26rem);
+  --font-md-size: clamp(1rem, 0.986rem + 0.07vw, 1.05rem);
+  --font-sm-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
 
   /* Font Weights */
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
   /* Letter Spacing */
@@ -60,9 +61,10 @@
   --letter-lg: 0.05em;
 
   /* Line Heights */
+  --line-one: 1;
   --line-sm: 1.2;
   --line-md: 1.5;
-  --line-lg: 1.75;
+  --line-lg: 1.65;
 
   /* ========================= */
   /* === Grayscale Palette === */
@@ -85,31 +87,32 @@
   --bg-tertiary: var(--accent);
 
   /* Text Colors */
-  --text-primary: var(--gray-900);
-  --text-secondary: var(--gray-700);
-  --text-tertiary: var(--gray-500);
+  --text-color-primary: var(--gray-900);
+  --text-color-secondary: var(--gray-700);
+  --text-color-tertiary: var(--gray-500);
 
   /* Border Colors */
   --border-primary: var(--gray-500);
   --border-secondary: var(--gray-700);
   --border-tertiary: var(--gray-300);
+  --border-strong: var(--gray-900);
 
   /* ========================= */
   /* === Button Styles === */
   /* ========================= */
 
   /* Primary Button */
-  --btn-primary-bg: var(--text-primary);
-  --btn-primary-border: var(--border-primary);
+  --btn-primary-bg: var(--gray-900);
+  --btn-primary-border: var(--gray-900);
   --btn-primary-text: var(--gray-100);
   --btn-primary-bg-hover: var(--gray-700);
   --btn-primary-border-hover: var(--gray-700);
   --btn-primary-text-hover: var(--gray-100);
 
   /* Secondary Button */
-  --btn-secondary-bg: var(--transparent);
+  --btn-secondary-bg: var(--gray-100);
   --btn-secondary-border: var(--border-secondary);
-  --btn-secondary-text: var(--text-secondary);
+  --btn-secondary-text: var(--gray-900);
   --btn-secondary-bg-hover: var(--gray-300);
   --btn-secondary-border-hover: var(--gray-500);
   --btn-secondary-text-hover: var(--text-primary);
@@ -129,8 +132,57 @@
   --z-index-neutral: 0;
   --z-index-positive-1: 1;
   --z-index-positive-2: 2;
-  --z-index-navbar: 5;
+  --z-index-header: 5;
   --z-index-modal: 10;
   --z-index-overlay: 15;
   --z-index-debug: 999;
+
+  /* ========================= */
+  /* === Site Sizes === */
+  /* ========================= */
+
+  /* Border Width */
+  --border-main: 1.25px;
+
+  /* Border Radiuses */
+  --border-radius-sm: 0.375rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-full: 100vw;
+
+  /* Site Settings */
+  --site-margin: clamp(0.75rem, 0.2rem + 3vw, 5rem);
+  --site-width: 90rem;
+  --site-max-width: min(var(--site-width), 100vw);
+
+  /* Containers */
+  --container-main: calc(var(--site-max-width) - var(--site-margin) * 2);
+
+  /* Sections Padding */
+  --pading-section-sm: var(--size--3rem);
+  --pading-section-md: var(--size--5rem);
+  --pading-section-lg: var(--size--7rem);
+  --pading-section-xl: var(--size--9rem);
+
+  /* ========================= */
+  /* === Grids === */
+  /* ========================= */
+
+  --gap-main: var(--size--1-25rem);
+  --gap-small: var(--size--1rem);
+  --gap-tiny: var(--size--0-75rem);
+
+  --site--column-count: 10;
+  --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+  --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+  --column-width--1: calc(var(--container-main) / var(--site--column-count));
+
+  --grid-breakout-single: var(--breakout-start) minmax(0, var(--container-main))
+    var(--breakout-end);
+
+  --grid-breakout: var(--breakout-start)
+    repeat(var(--site--column-count), minmax(0, var(--column-width--1)))
+    var(--breakout-end);
+
+  --grid-main: repeat(var(--site--column-count), minmax(0, 1fr));
 }

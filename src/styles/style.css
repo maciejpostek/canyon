@@ -1,7 +1,196 @@
+@import url('./variables.css');
+@import url('./header.css');
+@import url('./carousel.css');
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: var(--font-weight-regular);
   line-height: var(--line-md);
   letter-spacing: var(--letter-sm);
-  font-size: var(--size--1rem);
+  font-size: var(--font-md-size);
+  margin: 0px;
+}
+
+main {
+  display: block;
+  min-height: 100vh;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+  all: unset;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* ========== Utility Classes ========== */
+.u-container {
+  width: 100%;
+  max-width: var(--container-main);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.u-visual-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 1;
+  overflow: hidden;
+}
+
+.u-visual {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.u-input-search {
+  font-size: var(--font-sm-size);
+  height: var(--size--2-5rem);
+  border-radius: var(--border-radius-full);
+  border-color: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  line-height: 1em;
+  padding-top: var(--size--0-5rem);
+  padding-bottom: var(--size--0-5rem);
+  padding-right: var(--size--1-25rem);
+  padding-left: var(--size--1-25rem);
+}
+
+/* Typography */
+
+.u-h1 {
+  font-size: var(--font-h1-size);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-sm);
+  line-height: var(--line-one);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.u-h5 {
+  font-size: var(--font-h5-size);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-sm);
+  line-height: var(--line-one);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.u-text-small {
+  font-size: var(--font-sm-size);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-sm);
+  line-height: var(--line-lg);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Type Weights */
+
+.u-weight-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Grids */
+
+.u-grid-c3 {
+  display: grid;
+  grid-row-gap: var(--gap-main);
+  grid-column-gap: var(--gap-main);
+  grid-template-rows: auto;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.u-grid-c2 {
+  display: grid;
+  grid-row-gap: var(--gap-main);
+  grid-column-gap: var(--gap-main);
+  grid-template-rows: auto;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Buttons */
+.u-btn {
+  display: inline-flex;
+  flex-direction: row;
+  row-gap: var(--size--0-5rem);
+  justify-content: center;
+  align-items: center;
+  padding-right: var(--size--1-25rem);
+  padding-left: var(--size--1-25rem);
+  padding-top: var(--size--0-75rem);
+  padding-bottom: var(--size--0-75rem);
+  border: 1px solid var(--btn-primary-border);
+  border-radius: var(--border-radius-md);
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  font-size: var(--font-sm-size);
+}
+
+.u-btn.is-secondary {
+  border: 1px solid var(--btn-secondary-border);
+  border-radius: var(--border-radius-md);
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+.u-btn.is-secondary.is-small {
+  border-radius: var(--border-radius-full);
+  padding-right: var(--size--1rem);
+  padding-left: var(--size--1rem);
+  padding-top: var(--size--0-5rem);
+  padding-bottom: var(--size--0-5rem);
+}
+
+.u-link {
+  display: inline-block;
+  cursor: pointer;
+  font-size: var(--font-sm-size);
+  font-weight: var(--font-weight-regular);
+  padding: 0;
+  padding-bottom: 0.125rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: none;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1.35px solid var(--text-color-secondary);
+}
+
+.u-btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size--0-75rem);
+  flex-wrap: wrap;
+}
+
+.u-btn-group.is-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size--0-75rem);
+  flex-wrap: nowrap;
+}
+
+/* ========== Global Classes ========== */
+
+.g_link {
+  font-size: var(--font-sm-size);
+  line-height: 1;
+  text-decoration: none;
 }
